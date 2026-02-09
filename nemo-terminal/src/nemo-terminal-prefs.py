@@ -19,7 +19,7 @@ class LabeledItem(Gtk.Box):
     def __init__(self, label, item):
         super(LabeledItem, self).__init__(orientation=Gtk.Orientation.HORIZONTAL)
 
-        self.label_widget = Gtk.Label(label)
+        self.label_widget = Gtk.Label(label=label)
 
         self.pack_start(self.label_widget, False, False, 6)
         self.pack_end(item, False, False, 6)
